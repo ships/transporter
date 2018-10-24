@@ -16,7 +16,7 @@ At a minimum, this will need to involve abandoning browser-based interactions (w
 
 #### i. An account on GCP (Google Cloud Platform).
 
-This transporter is designed to behave like a rainstick: you should be able to tip most of the work you need done into machines you trust and own, or into the cloud, in flexible measure according to your own preferences. However, at the moment for networking reasons you will need a small suite of software running in the cloud, to permit all your devices to communicate across long distances.
+This TRANSPORTER is designed to behave like a rainstick: you should be able to tip most of the work you need done into machines you trust and own, or into the cloud, in flexible measure according to your own preferences. However, at the moment for networking reasons you will need a small suite of software running in the cloud, to permit all your devices to communicate across long distances.
 
 For simplicity, I am only focusing on out-of-the-box compatibility with Google. Though there is competition in this space, Google's interface layout is easier to understand and use for a non-technical person (it seems). Everything should work cross-platform with various competitors but, in service to a usable walkthrough, I will keep this document focused.
 
@@ -31,7 +31,7 @@ Signing up for stuff is designed to require human assistance, so you'll need to 
           	3. The third section doesn't matter for our purposes.
    	5. You should see this new account appear in a table. On the right edge of the table (you may have to **Hide info panel**), you will see an **Actions** column, with an icon you can click, and choose **Create key**. Choose **JSON**.
 
-This will need to download a _secret key_ for the new service account user. This is needed because you will use it to allow the transporter scripts to make changes to your GCP account on your behalf. Note that a `something.json` file should have appeared in your Downloads directory (found in Dock or Finder).
+This will need to download a _secret key_ for the new service account user. This is needed because you will use it to allow the TRANSPORTER scripts to make changes to your GCP account on your behalf. Note that a `something.json` file should have appeared in your Downloads directory (found in Dock or Finder).
 
 #### ii. preparing your home computer or laptop
 
