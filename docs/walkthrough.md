@@ -32,3 +32,32 @@ Signing up for stuff is designed to require human assistance, so you'll need to 
    	5. You should see this new account appear in a table. On the right edge of the table (you may have to **Hide info panel**), you will see an **Actions** column, with an icon you can click, and choose **Create key**. Choose **JSON**.
 
 This will need to download a _secret key_ for the new service account user. This is needed because you will use it to allow the transporter scripts to make changes to your GCP account on your behalf. Note that a `something.json` file should have appeared in your Downloads directory (found in Dock or Finder).
+
+#### ii. preparing your home computer or laptop
+
+Here we'll begin your crash course in using your computer's advanced features. You will run a few commands using the **Terminal** application. Though a lot is going on in these commands, I've tried to reduce the interface to some basic steps for you.
+
+1. In your **Terminal** window, copy and paste all this text:
+
+   ```bash
+   mkdir -p ~/workspace
+   cd !$
+   git clone https://github.com/ships/transporter transporter
+   cd !$
+   ls
+   ```
+
+   That's this repository! You now have a copy of all these files in that directory. You have also set that directory to your "current directory", which you can think of as the place where your cursor is in a document, except it's in a big structured building instead of just one page. To confirm it worked, the final output from that stuff should resemble the list of folders you see in this repository.
+
+2. Next, you will need to run this command to set up some required software:
+
+   ```bash
+   scripts/dependencies.sh
+   ```
+
+   You should see some output installing software on your machine. For me, the last output I see is like the following, which indicates that things were properly installed, but you still haven't gotten to Stage 1 (Setting up the hub):
+
+   ```
+   Read jumpbox vars file: open <long path to a file>: no such file or directory
+   direnv: export <a bunch of variables>
+   ```
