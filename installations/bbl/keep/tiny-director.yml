@@ -1,0 +1,14 @@
+---
+- type: replace
+  path: /resource_pools/0/cloud_properties/machine_type
+  value: g1-small
+# - type: remove
+#   path: /resource_pools/0/cloud_properties/machine_type
+#
+# - type: replace
+#   path: /resource_pools/0/cloud_properties/cpu?
+#   value: 1
+#
+# - type: replace
+#   path: /resource_pools/0/cloud_properties/ram?
+#   value: 1024

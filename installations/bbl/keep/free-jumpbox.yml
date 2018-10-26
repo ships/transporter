@@ -1,0 +1,5 @@
+---
+- type: replace
+  path: /resource_pools/0/cloud_properties/machine_type
+  value: 'f1-micro'
+
