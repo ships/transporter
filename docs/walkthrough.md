@@ -61,3 +61,17 @@ Here we'll begin your crash course in using your computer's advanced features. Y
    Read jumpbox vars file: open <long path to a file>: no such file or directory
    direnv: export <a bunch of variables>
    ```
+
+### 1. Setting up your "hub"
+
+We'll use that setup to quickly get you up and running with a "hub" on the Google Cloud. Begin typing:
+
+```bash
+scripts/bootstrap.sh <PATH TO YOUR DOWNLOADED SECRET KEY>
+```
+
+Remember in the earlier step, when we downloaded the JSON key for your service account? Replace the segment above, between & including the `<>` angle brackets, with the path to that file.
+
+_hint:_ you can get that file's path by finding it in Finder, and then dragging the file into the Terminal window after typing `scripts/bootstrap.sh ` and a space.
+
+This will take some time, but after, you should now have an installation in place.

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -ex
 
 if [ -z "$BBL_GCP_SERVICE_ACCOUNT_KEY" ]; then
   if [ -z "$1" ]; then
@@ -9,4 +9,8 @@ if [ -z "$BBL_GCP_SERVICE_ACCOUNT_KEY" ]; then
   fi
 fi
 
-bbl plan
+bbl plan --name transporter
+
+bbl up --name transporter --debug
+
+direnv reload
