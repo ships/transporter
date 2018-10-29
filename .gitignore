@@ -1,3 +1,5 @@
 installations/bbl/*
 tmp/*
 .secret/*
+
+installations/*/variables.yml
