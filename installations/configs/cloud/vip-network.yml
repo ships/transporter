@@ -1,0 +1,4 @@
+---
+networks:
+- name: elastic-ips
+  type: vip
