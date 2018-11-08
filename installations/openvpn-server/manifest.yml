@@ -21,6 +21,8 @@ instance_groups:
       server: ((virtual_network.start_ip)) ((virtual_network.netmask))
       tls_server: ((server_tls))
       dh_pem: ((dh_pem))
+      ccd:
+      - ["((ccd.static_ip_0.common_name))", "ifconfig-push ((ccd.static_ip_0.ip)) ((virtual_network.netmask))"]
   networks:
   - name: default
     default: [dns, gateway]
