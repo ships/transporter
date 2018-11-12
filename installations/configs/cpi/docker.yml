@@ -6,8 +6,8 @@ cpis:
     docker_cpi:
       host_ip: "((docker_host.ip))"
       docker:
-        host:
-        tls:
+        host: "tcp://((docker_host.ip)):((docker_host.port))"
+        tls: "((/pki/identities/bosh))"
       agent:
         mbus: "nats://nats:((nats_password))@((internal_ip)):4222"
         blobstore:
