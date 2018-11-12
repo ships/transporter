@@ -1,0 +1,21 @@
+---
+cpis:
+- name: "docker-((docker_host.name))"
+  type: docker
+  properties:
+    docker_cpi:
+      host_ip: "((docker_host.ip))"
+      docker:
+        host:
+        tls:
+      agent:
+        mbus: "nats://nats:((nats_password))@((internal_ip)):4222"
+        blobstore:
+          provider: dav
+          options:
+            endpoint: "http://((internal_ip)):25250"
+            user: agent
+            password: ((blobstore_agent_password))
+            tls:
+              cert:
+                ca: ((blobstore_ca.certificate))

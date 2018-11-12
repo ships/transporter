@@ -3,3 +3,4 @@ tmp/*
 .secret/*
 
 installations/*/variables.yml
+installations/*/*/variables.yml
