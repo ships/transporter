@@ -1,0 +1,6 @@
+installations/bbl/bbl-state.json
+installations/bbl/vars/director-vars-store.yml
+installations/bbl/vars/jumpbox-vars-store.yml
+installations/bbl/vars/bosh-state.json
+installations/openvpn-server/variables.yml
+
