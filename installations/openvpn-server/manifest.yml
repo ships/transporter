@@ -22,7 +22,7 @@ instance_groups:
       tls_server: ((server_tls))
       dh_pem: ((dh_pem))
       push_routes:
-      - "10.0.0.0 255.255.255.0"
+      - "10.0.0.0 255.255.0.0"
       ccd:
       - ["((ccd.static_ip_0.common_name))", "ifconfig-push ((ccd.static_ip_0.ip)) ((virtual_network.netmask))"]
   networks:
