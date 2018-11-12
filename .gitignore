@@ -4,3 +4,6 @@ tmp/*
 
 installations/*/variables.yml
 installations/*/*/variables.yml
+
+.DS_Store
+**/.DS_Store
