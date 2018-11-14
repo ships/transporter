@@ -53,8 +53,12 @@ instance_groups:
             users:
             - ships
 
-      add_local_users:
-      - 'admin:((admin_user.password))'
+      credhub:
+        client_id: credhub-admin
+        client_secret: ((/bosh-director/vars-store/credhub_admin_client_secret))
+        url: https://((director.ip)):((director.credhub_port))
+        tls:
+          ca_cert: ((/bosh-director/vars-store/credhub_ca))
 
       postgresql:
         database: &db_name atc
