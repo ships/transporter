@@ -16,4 +16,5 @@ fi
 
 bosh deploy $REPO_ROOT/installations/openvpn-server/manifest.yml \
   -d vpn \
+  -o $REPO_ROOT/installations/openvpn-server/iptables-forward-rules.yml \
   --vars-file $REPO_ROOT/installations/openvpn-server/variables.yml

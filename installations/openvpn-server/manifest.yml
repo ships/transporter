@@ -12,7 +12,7 @@ update:
   update_watch_time: 1000-60000
 
 instance_groups:
-- name: server
+- name: openvpn
   instances: 1
   jobs:
   - name: openvpn
